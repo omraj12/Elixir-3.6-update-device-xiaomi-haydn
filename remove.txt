@@ -1,0 +1,7 @@
+device/xiaomi/sm8350-common
+kernel/xiaomi/sm8350
+vendor/xiaomi/sm8350-common
+vendor/xiaomi/haydn
+vendor/qcom/opensource/healthd-ext
+hardware/xiaomi
+vendor/xiaomi/haydn-miuicamera

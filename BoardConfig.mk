@@ -9,11 +9,17 @@ DEVICE_PATH := device/xiaomi/haydn
 # Inherit from sm8350-common
 include device/xiaomi/sm8350-common/BoardConfigCommon.mk
 
+# Inherit from proprietary files for miuicamera
+-include vendor/xiaomi/haydn-miuicamera/products/board.mk
+
 # Assert
 TARGET_OTA_ASSERT_DEVICE := haydn,haydnin
 
 # Board
 TARGET_BOOTLOADER_BOARD_NAME := haydn
+
+# Build
+BUILD_BROKEN_DUP_RULES := true
 
 # Kernel
 TARGET_KERNEL_CONFIG += vendor/haydn_QGKI.config
@@ -35,3 +41,6 @@ SOONG_CONFIG_xiaomiSm8350Vars_vibrator_use_effect_stream := true
 
 # Include proprietary files
 include vendor/xiaomi/haydn/BoardConfigVendor.mk
+
+# Include Firmware
+include vendor/xiaomi/haydn-firmware/BoardConfigVendor.mk
