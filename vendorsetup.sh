@@ -22,4 +22,4 @@ rm -rf hardware/xiaomi
 git clone https://github.com/LineageOS/android_hardware_xiaomi.git hardware/xiaomi 
 
 # Miui Camera
-git clone https://gitlab.com/Alucard_Storm/haydn-miuicamera -b miui-camera_common vendor/xiaomi/haydn-miuicamera
+git clone https://gitlab.com/Alucard_Storm/haydn-miuicamera -b thirteen-leica vendor/xiaomi/haydn-miuicamera
